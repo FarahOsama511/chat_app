@@ -40,3 +40,10 @@ jobs:
           name: chatapp-staging-apk
           path: build/app/outputs/flutter-apk/app-staging-release.apk
           retention-days: 7
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.9'
+          channel: stable
+          cache: true
