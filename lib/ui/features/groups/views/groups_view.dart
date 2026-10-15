@@ -108,7 +108,6 @@ class _GroupsViewState extends State<GroupsView> {
                       separatorBuilder: (context, index) => const AppDivider(),
                       itemBuilder: (context, index) {
                         final room = context.read<RoomsCubit>().chats[index];
-                        ;
                         return ConversationTile(
                           room: room,
                           onTap: () async {
